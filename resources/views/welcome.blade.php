@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="<?= session('theme') ?>">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/taildwindCss3.0.12.js') }}"></script>
+    <!-- <script src="{{ asset('js/taildwindCss3.0.12.js') }}"></script> -->
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <title>Document</title>
@@ -37,16 +37,25 @@
                                         </svg>
                                     </div>
                                     <div class="rounded-full h-10 w-10 space-x-0 dark:bg-slate-600 bg-slate-200 grid place-items-center">
-                                        <div class=" dark:hidden" id="btn-sun">
+
+
+
+                                        @if (session('theme') == '' || session('theme') == 'dark')
+                                        <a href="{{ url('chang_themes/'.'light') }}" class=""  id="btn-dark">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                                             </svg>
-                                        </div>
-                                        <div class=" dark:block" id="btn-dark">
+                                        </a>
+                                        @elseif ( session('theme') == 'light')
+                                        <a href="{{ url('chang_themes/'.'dark') }}" class=""  id="btn-light">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                                             </svg>
-                                        </div>
+                                        </a>
+                                        @endif
+
+
+
                                     </div>
                                 </div>
                                 <div class=" w-4/12 ">
@@ -77,15 +86,14 @@
                                         <span class=" text-red-500">text-red-500</span>
                                     </a>
                                 </li>
-                                <li class="">
-                                    <a class="px-20 py-3 text-red-500" href="">
-                                        <span class="text-red-500"">text-red-500</span>
+                                <a class="px-20 py-3 text-red-500" href="">
+                                    <span class="text-red-500"">text-red-500</span>
                                         </a>
                                     </li>
                                     <li class="">
                                         <a class=" px-20 py-3 text-red-500" href="">
-                                            <span class="text-red-500">text-red-500"</span>
-                                    </a>
+                                        <span class="text-red-500">text-red-500"</span>
+                                </a>
                                 </li>
                             </ul>
                         </div>
@@ -93,7 +101,6 @@
                 </div>
             </section>
             <section>
-
             </section>
         </nav>
     </header>
@@ -106,35 +113,8 @@
 
 
 
-        <script>
-            $(document).ready(function() {
-                $('#btn-sun').click(function() {
-                    if(localStorage.getItem('theme') === null || localStorage.getItem('theme') === 'light'){
-                        localStorage.setItem('theme', 'dark');
-                        $('#btn-dark').removeClass('dark:hidden').addClass('dark:block');
-                        $('#btn-sun').removeClass('dark:hidden');
-                        $('html').addClass('dark');
-
-                    }
 
 
-                });
-                $('#btn-dark').click(function() {
-                    if (localStorage.getItem('theme') === null || localStorage.getItem('theme') === 'dark') {
-                        localStorage.setItem('theme', 'light');
-                        $('#btn-sun').removeClass('dark:hidden');
-                        $('#btn-dark').removeClass('dark:block').addClass('dark:hidden');
-                      
-                        $('html').removeClass('dark');
-                    }
-
-
-
-
-
-                });
-            });
-        </script>
     </footer>
 
 </body>
