@@ -8,6 +8,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- <script src="{{ asset('js/taildwindCss3.0.12.js') }}"></script> -->
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/taildwindCss3.0.12.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <title>Document</title>
 </head>
@@ -37,25 +38,19 @@
                                         </svg>
                                     </div>
                                     <div class="rounded-full h-10 w-10 space-x-0 dark:bg-slate-600 bg-slate-200 grid place-items-center">
-
-
-
                                         @if (session('theme') == '' || session('theme') == 'dark')
-                                        <a href="{{ url('chang_themes/'.'light') }}" class=""  id="btn-dark">
+                                        <a href="{{ url('chang_themes/'.'light') }}" class="" id="btn-dark">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                                             </svg>
                                         </a>
                                         @elseif ( session('theme') == 'light')
-                                        <a href="{{ url('chang_themes/'.'dark') }}" class=""  id="btn-light">
+                                        <a href="{{ url('chang_themes/'.'dark') }}" class="" id="btn-light">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                                             </svg>
                                         </a>
                                         @endif
-
-
-
                                     </div>
                                 </div>
                                 <div class=" w-4/12 ">
@@ -71,7 +66,53 @@
                                     </div>
                                 </div>
                                 <div class="w-20 ">
-                                    <img class="" src="{{ asset('img/logo/logo.png') }}" alt="" srcset="">
+                                    <img class="mt-2" src="{{ asset('img/logo/logo2.png') }}" alt="arzoonyshod" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:hidden h-full ">
+                            <div class="flex justify-between items-center h-full ">
+                                <div class="ml-10 ">
+                                    <div class="relative">
+                                        <div class="md:hidden">
+                                            <button class=" p-2 dark:bg-slate-700 rounded-lg ">
+                                                <div class="px-1    dark:bg-slate-600 rounded-lg relative left-4">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 8l4 4m0 0l-4 4m4-4H3" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="hidden md:block ">
+                                            <button class="flex py-2 pl-2 pr-6 dark:bg-slate-700 rounded-lg  ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 8l4 4m0 0l-4 4m4-4H3" />
+                                                </svg>
+                                                <span class="text-sm">ورود</span>
+                                            </button>
+                                            <button class="flex p-2 dark:bg-slate-600 rounded-lg absolute left-16 top-0 ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                                                </svg>
+                                                <span class="ml-1 text-sm">عضویت</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="w-44 hidden md:block">
+                                        <img class="" src="{{ asset('img/logo/logo1.png') }}" alt="arzoonyshod" srcset="">
+                                    </div>
+                                    <div class="w-10  md:hidden ">
+                                        <img class="" src="{{ asset('img/logo/logo3.png') }}" alt="arzoonyshod" srcset="">
+                                    </div>
+                                </div>
+                                <div class="mr-10">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +141,8 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="lg:hidden">
+                dd
             </section>
         </nav>
     </header>
