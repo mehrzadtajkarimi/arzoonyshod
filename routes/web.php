@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('chang_themes/{type}', 'ThemeController@theme');
+Route::get('/chang_themes/{type}', 'ThemeController@theme');

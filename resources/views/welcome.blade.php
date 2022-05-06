@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="<?= session('theme') ?>">
+<html lang="en" class="<?= session('theme')  ?? 'dark' ?>">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- <script src="{{ asset('js/taildwindCss3.0.12.js') }}"></script> -->
+    <!-- <script type="text/javascript" src="{{ asset('js/taildwindCss3.0.12.js') }}"></script> -->
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/taildwindCss3.0.12.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <title>Document</title>
 </head>
@@ -16,6 +16,23 @@
 <body class="bg-width  dark:bg-slate-900 dark:text-red-500  text-slate-600 ">
     <header>
         <nav>
+            <div class="lg:hidden">
+                <div class="hidden" id="nav">
+                    <div class="h-screen absolute right-0 left-0 bg-black  opacity-50 z-10"></div>
+                    <div class="h-screen absolute right-0 py-14 px-32 z-10 bg-white opacity-100" id="nav">
+                        <button class=" absolute left-3 top-3" id="btn-nav-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                        <section>
+                            <img src="{{ asset('img/logo/logo1.png') }}" alt="" srcset="">
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+
             <section>
                 <div class="flex justify-center">
                     <div class="rounded-2xl  w-10/12 h-24 mt-7 drop-shadow-lg  dark:bg-slate-800  bg-slate-50">
@@ -53,7 +70,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                <div class=" w-4/12 ">
+                                <div class="w-4/12">
                                     <div class="flex items-center justify-end rounded-lg h-10 dark:bg-slate-700 bg-slate-200">
                                         <div class="mr-2">
                                             <p class="dark:text-red-400 opacity-80 text-slate-600">دنبال چه میگردی ؟</p>
@@ -65,7 +82,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-20 ">
+                                <div class="w-20">
                                     <img class="mt-2" src="{{ asset('img/logo/logo2.png') }}" alt="arzoonyshod" srcset="">
                                 </div>
                             </div>
@@ -75,8 +92,8 @@
                                 <div class="ml-10 ">
                                     <div class="relative">
                                         <div class="md:hidden">
-                                            <button class=" p-2 dark:bg-slate-700 rounded-lg ">
-                                                <div class="px-1    dark:bg-slate-600 rounded-lg relative left-4">
+                                            <button class=" p-2 dark:bg-slate-700 bg-slate-200 rounded-lg ">
+                                                <div class="px-1    dark:bg-slate-600 bg-slate-300 rounded-lg relative left-4">
                                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                         <path stroke-linecap="round" stroke-linejoin="round" d="M13 8l4 4m0 0l-4 4m4-4H3" />
                                                     </svg>
@@ -84,13 +101,13 @@
                                             </button>
                                         </div>
                                         <div class="hidden md:block ">
-                                            <button class="flex py-2 pl-2 pr-6 dark:bg-slate-700 rounded-lg  ">
+                                            <button class="flex py-2 pl-2 pr-6 dark:bg-slate-700 bg-slate-200 rounded-lg  ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 8l4 4m0 0l-4 4m4-4H3" />
                                                 </svg>
                                                 <span class="text-sm">ورود</span>
                                             </button>
-                                            <button class="flex p-2 dark:bg-slate-600 rounded-lg absolute left-16 top-0 ">
+                                            <button class="flex py-2 dark:bg-slate-600  bg-slate-300 rounded-lg absolute left-16 top-0 ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
                                                 </svg>
@@ -106,9 +123,10 @@
                                     <div class="w-10  md:hidden ">
                                         <img class="" src="{{ asset('img/logo/logo3.png') }}" alt="arzoonyshod" srcset="">
                                     </div>
+
                                 </div>
                                 <div class="mr-10">
-                                    <button>
+                                    <button id="btn-nav">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                                         </svg>
@@ -140,6 +158,7 @@
                         </div>
                     </div>
                 </div>
+
             </section>
             <section class="lg:hidden">
                 dd
@@ -152,7 +171,14 @@
     </main>
     <footer>
 
+        <script>
+            $(document).ready(function() {
+                $('#btn-nav').click(function() {
 
+                    $('#nav').toggleClass('hidden');
+                });
+            });
+        </script>
 
 
 
