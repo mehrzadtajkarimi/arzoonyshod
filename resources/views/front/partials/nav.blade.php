@@ -48,6 +48,9 @@
                 </a>
                 @endif
                 <hr class=" border-slate-400 dark:border-red-500 opacity-20">
+                <ul class="list-none  items-center ">
+                    @include('front.partials.nav_item')
+                </ul>
             </div>
         </div>
     </div>
@@ -78,13 +81,13 @@
                         <div class="rounded-full h-10 w-10 space-x-0 dark:bg-slate-600 bg-slate-200 grid place-items-center">
                             @if (session('theme') == '' || session('theme') == 'dark')
                             <a href="{{ url('chang_themes/'.'light') }}" class="" id="btn-dark">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                             </a>
                             @elseif ( session('theme') == 'light')
                             <a href="{{ url('chang_themes/'.'dark') }}" class="" id="btn-light">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                                 </svg>
                             </a>
@@ -157,24 +160,11 @@
             </div>
         </div>
     </div>
-    <div class="hidden lg:block dark:text-red-500 text-slate-600 ">
+    <div class="hidden lg:block ">
         <div class="flex justify-center ">
             <div class="rounded-2xl rounded-t-none  w-9/12 h-12 drop-shadow-lg   dark:bg-slate-700  bg-slate-100">
                 <ul class="list-none h-full flex flex-row justify-evenly items-center ">
-                    <li class="">
-                        <a class="px-20 py-3 " href="">
-                            <span class=" text-red-500">text-red-500</span>
-                        </a>
-                    </li>
-                    <a class="px-20 py-3 text-red-500" href="">
-                        <span class="text-red-500"">text-red-500</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a class=" px-20 py-3 text-red-500" href="">
-                            <span class="text-red-500">text-red-500"</span>
-                    </a>
-                    </li>
+                    @include('front.partials.nav_item')
                 </ul>
             </div>
         </div>
