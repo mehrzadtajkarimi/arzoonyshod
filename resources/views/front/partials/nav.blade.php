@@ -48,9 +48,9 @@
                 </a>
                 @endif
                 <hr class=" border-slate-400 dark:border-red-500 opacity-20">
-                <ul class="list-none  items-center ">
+                <div>
                     @include('front.partials.nav_item')
-                </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -163,9 +163,9 @@
     <div class="hidden lg:block ">
         <div class="flex justify-center ">
             <div class="rounded-2xl rounded-t-none  w-9/12 h-12 drop-shadow-lg   dark:bg-slate-700  bg-slate-100">
-                <ul class="list-none h-full flex flex-row justify-evenly items-center ">
+                <div class="h-full">
                     @include('front.partials.nav_item')
-                </ul>
+                </div>
             </div>
         </div>
     </div>
