@@ -1,8 +1,10 @@
 <script>
     $(document).ready(function() {
         $('#btn-nav').click(function() {
-
-            $('#nav').toggleClass('hidden');
+            $('#nav').removeClass('hidden');
+        });
+        $('#btn-nav-close , #background_nav').click(function() {
+            $('#nav').addClass('hidden');
         });
 
 

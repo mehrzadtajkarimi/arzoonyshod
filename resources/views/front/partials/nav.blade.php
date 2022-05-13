@@ -1,6 +1,6 @@
 <section class="lg:hidden">
     <div class="hidden relative" id="nav">
-        <div class="h-screen w-screen bg-black  opacity-50 z-10 absolute">
+        <div id="background_nav" class="h-screen w-screen bg-black  opacity-50 z-10 absolute">
         </div>
         <div class="h-screen absolute right-0 w-2/5 z-20 bg-white dark:bg-slate-700" id="nav">
             <div class="container mx-auto px-4">
