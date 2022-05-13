@@ -48,7 +48,7 @@
                 </a>
                 @endif
                 <hr class=" border-slate-400 dark:border-red-500 opacity-20">
-                <div>
+                <div class="md_nav">
                     @include('front.partials.nav_item')
                 </div>
             </div>
@@ -163,7 +163,7 @@
     <div class="hidden lg:block ">
         <div class="flex justify-center ">
             <div class="rounded-2xl rounded-t-none  w-9/12 h-12 drop-shadow-lg   dark:bg-slate-700  bg-slate-100">
-                <div class="h-full">
+                <div class="md_nav h-full" >
                     @include('front.partials.nav_item')
                 </div>
             </div>
