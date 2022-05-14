@@ -15,6 +15,6 @@ class HomeController extends Controller
       $data = [
          'theme' =>  's',
       ];
-      return view('front.master', $data);
+      return view('front.home.index', $data);
    }
 }

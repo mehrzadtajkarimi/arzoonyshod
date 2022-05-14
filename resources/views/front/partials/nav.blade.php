@@ -48,8 +48,43 @@
                 </a>
                 @endif
                 <hr class=" border-slate-400 dark:border-red-500 opacity-20">
-                <div class="md_nav">
-                    @include('front.partials.nav_item')
+                <div id="md_nav">
+                    <ul class="">
+                        <li class="dark:text-red-500 text-slate-500 py-3   ">
+                            <span class="lg:inline block text-right">کـــفـش</span>
+                            <ul class="hidden bg-slate-600 rounded-xl text-center mt-3">
+                                <li class=" ">
+                                    <a class="block py-3" href="">زنانه</a>
+                                </li>
+                                <li class="">
+                                    <a class="block py-3" href="">مردانه</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dark:text-red-500 text-slate-500 py-3 w-full ">
+                            <span class="block text-right">لـبــــاس</span>
+                            <ul class="hidden bg-slate-600 rounded-xl text-center mt-3">
+                                <li class=" ">
+                                    <a class="block py-3" href="">زنانه</a>
+                                </li>
+                                <li class="">
+                                    <a class="block py-3" href="">مردانه</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dark:text-red-500 text-slate-500 py-3 w-full ">
+                            <span class="block text-right">اکسسوری</span>
+                            <ul class="hidden bg-slate-600 rounded-xl text-center mt-3">
+                                <li class=" ">
+                                    <a class="block py-3" href="">زنانه</a>
+                                </li>
+                                <li class="">
+                                    <a class="block py-3" href="">مردانه</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -163,8 +198,43 @@
     <div class="hidden lg:block ">
         <div class="flex justify-center ">
             <div class="rounded-2xl rounded-t-none  w-9/12 h-12 drop-shadow-lg   dark:bg-slate-700  bg-slate-100">
-                <div class="md_nav h-full" >
-                    @include('front.partials.nav_item')
+                <div id="lg_nav">
+                    <ul class="flex justify-evenly ">
+                        <li class="dark:text-red-500 text-slate-500 py-3   ">
+                            <span class=" ">کـــفـش</span>
+                            <ul class="hidden bg-slate-600 rounded-b-xl  text-center mt-3 w-40">
+                                <li class=" ">
+                                    <a class="block py-3" href="">زنانه</a>
+                                </li>
+                                <li class="">
+                                    <a class="block py-3" href="">مردانه</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dark:text-red-500 text-slate-500 py-3  ">
+                            <span class=" ">لـبــــاس</span>
+                            <ul class="hidden bg-slate-600 rounded-xl text-center mt-4">
+                                <li class=" ">
+                                    <a class="block py-3" href="">زنانه</a>
+                                </li>
+                                <li class="">
+                                    <a class="block py-3" href="">مردانه</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dark:text-red-500 text-slate-500 py-3  ">
+                            <span class="">اکسسوری</span>
+                            <ul class="hidden bg-slate-600 rounded-xl text-center mt-4">
+                                <li class=" ">
+                                    <a class="block py-3" href="">زنانه</a>
+                                </li>
+                                <li class="">
+                                    <a class="block py-3" href="">مردانه</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

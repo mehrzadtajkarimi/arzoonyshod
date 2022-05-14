@@ -8,10 +8,16 @@
         });
 
 
-        $('.md_nav ul li').click(function(e) {
+        $('#md_nav ul li').click(function(e) {
             e.preventDefault();
             var target = $(this).index();
-            $('.md_nav ul li ul').eq(target).fadeToggle('hidden')
+            $('#md_nav ul li ul').eq(target).fadeToggle('hidden')
+                .parent().siblings().find('ul').hide();
+        });
+        $('#lg_nav ul li').click(function(e) {
+            e.preventDefault();
+            var target = $(this).index();
+            $('#lg_nav ul li ul').eq(target).fadeToggle('hidden')
                 .parent().siblings().find('ul').hide();
         });
 
