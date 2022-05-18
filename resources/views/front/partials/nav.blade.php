@@ -1,5 +1,5 @@
 <div class="flex justify-center ">
-    <div class="rounded-2xl  w-10/12 h-24 mt-7 drop-shadow-lg  dark:bg-slate-800  bg-slate-50 ">
+    <div class="rounded-2xl  w-10/12 h-24 mt-7   dark:bg-slate-800  bg-slate-50 ">
         <section class="hidden lg:block">
             <div class="flex justify-between items-center mx-10">
                 <div class="flex flex-row content-center items-center  space-x-4 ">
@@ -135,7 +135,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="fixed inset-0 " x-data="{ nav_mobile : false }">
+            <div class="absolute inset-0 " x-data="{ nav_mobile : false }">
                 <div class="relative">
                     <div class="h-screen absolute w-screen bg-black  opacity-50 z-10 ">
                     </div>
