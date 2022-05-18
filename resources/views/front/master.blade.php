@@ -6,7 +6,8 @@
     <title>@yield('title')</title>
 </head>
 
-<body class="bg-width  dark:bg-slate-900 dark:text-red-500  text-slate-600 ">
+<body class="bg-width  dark:bg-slate-900 dark:text-red-500  text-slate-600 relative">
+
     <header>
         <nav>
             @include('front.partials.nav')
@@ -18,7 +19,7 @@
         </div>
     </header>
     <main>
-        <div class="">
+        <div class="container">
             @yield('content')
         </div>
     </main>

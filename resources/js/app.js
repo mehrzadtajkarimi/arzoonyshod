@@ -1,2 +1,2 @@
 require('./bootstrap');
-require('../../public/js/jquery');
+// require('../../public/js/jquery');
