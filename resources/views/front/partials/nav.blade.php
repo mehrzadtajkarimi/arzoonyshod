@@ -90,7 +90,7 @@
                 </div>
             </div>
         </section>
-        <section class="block lg:hidden">
+        <section class="block lg:hidden" x-data="{nav_open : false}">
             <div class="flex justify-between items-center mt-5 md:m-0">
                 <div class="ml-10">
                     <div class="">
@@ -129,21 +129,23 @@
                         <img class="" src="{{ asset('img/logo/logo3.png') }}" alt="arzoonyshod" srcset="">
                     </div>
                 </div>
-                <div class="mr-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                <div class="mr-10  cursor-pointer">
+                    <button type="button" class="" @click="nav_open = true ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-            <div class="absolute inset-0 " x-data="{ nav_mobile : false }">
-                <div class="relative">
-                    <div class="h-screen absolute w-screen bg-black  opacity-50 z-10 ">
+            <div class=" ">
+                <div class="absolute inset-0 " x-show="nav_open" >
+                    <div class="h-screen absolute w-screen bg-black  opacity-50 z-10 " @click="nav_open = false ">
                     </div>
-                    <div class="h-screen absolute right-0 w-2/5 z-20 bg-white dark:bg-slate-700">
+                    <div class="h-screen absolute right-0 w-2/5 z-20 bg-white dark:bg-slate-700" >
                         <div class="container mx-auto px-4">
                             <div class="flex flex-row items-center">
                                 <div class="basis-2/4">
-                                    <button id="btn-nav-close" class="p-2">
+                                    <button id="btn-nav-close" class="p-2" @click="nav_open = false ">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-400 dark:text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>

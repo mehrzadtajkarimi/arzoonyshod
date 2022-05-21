@@ -10,9 +10,9 @@
 
 
         <div class="mx-auto w-10/12 rounded-xl">
-            <div class="w-full bg-black ">
+            <div class="w-full  ">
                 <div class="grid lg:grid-cols-5 grid-cols-1 gap-2 bg-slate-500">
-                    <!-- <div class="toolbox w-full">
+                    <div class="toolbox w-full">
                         <div class="toolbox-right bg-amber-300">
                             <div class="toolbox-info">
                                 نمایش <span>9 از 56</span> محصول
@@ -134,7 +134,7 @@
                             </div>
 
                         </div>
-                    </div> -->
+                    </div>
 
                     <!-- <nav aria-label="Page navigation">
                         <ul class="pagination justify-content-center">
