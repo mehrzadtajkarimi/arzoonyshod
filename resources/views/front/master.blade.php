@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="<?= session('theme')  ?? 'dark' ?>">
+<html lang="en" class="<?= session('theme')  ?? 'dark' ?> relative">
 
 <head>
     @include('front.partials.head')
     <title>@yield('title')</title>
 </head>
 
-<body class="bg-width  dark:bg-slate-900 dark:text-red-500  text-slate-600 relative">
-
+<body class="container bg-width  dark:bg-slate-900 dark:text-red-500  text-slate-600 ">
     <header>
-        <nav>
+        <nav class="w-full">
             @include('front.partials.nav')
         </nav>
         <div id="breadcrumb">
@@ -19,7 +18,7 @@
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="w-full">
             @yield('content')
         </div>
     </main>

@@ -1,5 +1,5 @@
-<div class="flex justify-center ">
-    <div class="rounded-2xl  w-10/12 h-24 mt-7   dark:bg-slate-800  bg-slate-50 ">
+<div class="flex justify-center lg:mb-16 mb-4">
+    <div class="rounded-2xl  w-full h-24 mt-4  dark:bg-slate-800  bg-slate-50 ">
         <section class="hidden lg:block">
             <div class="flex justify-between items-center mx-10">
                 <div class="flex flex-row content-center items-center  space-x-4 ">
