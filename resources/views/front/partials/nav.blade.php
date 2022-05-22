@@ -111,11 +111,11 @@
                                     </svg>
                                     <span class="text-sm">ورود</span>
                                 </button>
-                                <button class="flex py-2 dark:bg-slate-600  bg-slate-300 rounded-lg absolute left-16 top-0 ">
+                                <button class="flex py-2 px-2  dark:bg-slate-600  bg-slate-300 rounded-lg absolute left-16 top-0 ">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
                                     </svg>
-                                    <span class="ml-1 text-sm">عضویت</span>
+                                    <span class="text-sm">عضویت</span>
                                 </button>
                             </div>
                         </div>

@@ -10,51 +10,17 @@
                     <div class="block lg:hidden border-b mb-2 border-red-800">
                         <aside class=" m-3 text-right ">
                             <div class="flex justify-end gap-3 sidebar sidebar-shop">
-                                <div class="widget widget-clean">
-                                    <label>فیلترها : </label>
-                                    <a href="#" class="sidebar-filter-clear">پاک کردن همه</a>
+                                <div class="flex items-center">
+                                    <label class="text-sm  py-1">فیلترها </label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                    </svg>
                                 </div>
-
-                                <div class="widget widget-collapsible">
-                                    <h3 class="widget-title">
-                                        <a data-toggle="collapse" href="#widget-1" role="button" aria-expanded="true" aria-controls="widget-1">
-                                            دسته بندی
-                                        </a>
-                                    </h3>
-                                </div>
-
-                                <div class="widget widget-collapsible">
-                                    <h3 class="widget-title">
-                                        <a data-toggle="collapse" href="#widget-2" role="button" aria-expanded="true" aria-controls="widget-2">
-                                            سایز
-                                        </a>
-                                    </h3>
-                                </div>
-
-                                <div class="widget widget-collapsible">
-                                    <h3 class="widget-title">
-                                        <a data-toggle="collapse" href="#widget-3" role="button" aria-expanded="true" aria-controls="widget-3">
-                                            رنگ
-                                        </a>
-                                    </h3>
-                                </div>
-
-                                <div class="widget widget-collapsible">
-                                    <h3 class="widget-title">
-                                        <a data-toggle="collapse" href="#widget-4" role="button" aria-expanded="true" aria-controls="widget-4">
-                                            برند
-                                        </a>
-                                    </h3>
-
-                                </div>
-
-                                <div class="widget widget-collapsible">
-                                    <h3 class="widget-title">
-                                        <a data-toggle="collapse" href="#widget-5" role="button" aria-expanded="true" aria-controls="widget-5">
-                                            قیمت
-                                        </a>
-                                    </h3>
-
+                                <div class="flex items-center">
+                                    <label class="text-sm  py-1">پربازدیدترین </label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-1 mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4" />
+                                    </svg>
                                 </div>
                             </div>
                         </aside>
@@ -129,10 +95,10 @@
                         <div class="row justify-content-center">
                             <div class="grid grid-cols-3 gap-5 px-5">
                                 <div class="product text-center bg-slate-700 rounded-lg">
-                                    <figure class="product-media">
+                                    <figure class="product-media max-h-fit ">
                                         <span class="product-label label-new">جدید</span>
-                                        <a href="product.html">
-                                            <img src="assets/images/products/product-4.jpg" alt="تصویر محصول" class="product-image">
+                                        <a href="product.html " class="">
+                                            <img src="{{ asset('img/product/lg/men.jpg') }}" alt="تصویر محصول" class="product-image">
                                         </a>
 
                                         <div class="product-action-vertical">
@@ -165,16 +131,16 @@
                                             <span class="ratings-text">( 2 بازدید )</span>
                                         </div>
 
-                                        <div class="product-nav product-nav-thumbs">
-                                            <a href="#" class="active">
-                                                <img src="assets/images/products/product-4-thumb.jpg" alt="product desc">
+                                        <div class="product-nav product-nav-thumbs flex gap-2 p-2 ">
+                                            <a href="#" class="active ">
+                                                <img src="{{ asset('img/product/lg/men.jpg') }}" class="rounded-md" alt="product desc">
                                             </a>
                                             <a href="#">
-                                                <img src="assets/images/products/product-4-2-thumb.jpg" alt="product desc">
+                                                <img src="{{ asset('img/product/lg/men.jpg') }}" class="rounded-md" alt="product desc">
                                             </a>
 
                                             <a href="#">
-                                                <img src="assets/images/products/product-4-3-thumb.jpg" alt="product desc">
+                                                <img src="{{ asset('img/product/lg/men.jpg') }}" class="rounded-md" alt="product desc">
                                             </a>
                                         </div>
                                     </div>
@@ -184,7 +150,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-new">جدید</span>
                                         <a href="product.html">
-                                            <img src="assets/images/products/product-4.jpg" alt="تصویر محصول" class="product-image">
+                                            <img src="{{ asset('img/product/lg/men1.jpg') }}" alt="تصویر محصول" class="product-image h-30">
                                         </a>
 
                                         <div class="product-action-vertical">
@@ -216,17 +182,16 @@
                                             </div>
                                             <span class="ratings-text">( 2 بازدید )</span>
                                         </div>
-
-                                        <div class="product-nav product-nav-thumbs">
-                                            <a href="#" class="active">
-                                                <img src="assets/images/products/product-4-thumb.jpg" alt="product desc">
+                                        <div class="product-nav product-nav-thumbs flex gap-2 p-2 ">
+                                            <a href="#" class="active ">
+                                                <img src="{{ asset('img/product/lg/men1.jpg') }}" class="rounded-md" alt="product desc">
                                             </a>
                                             <a href="#">
-                                                <img src="assets/images/products/product-4-2-thumb.jpg" alt="product desc">
+                                                <img src="{{ asset('img/product/lg/men1.jpg') }}" class="rounded-md" alt="product desc">
                                             </a>
 
                                             <a href="#">
-                                                <img src="assets/images/products/product-4-3-thumb.jpg" alt="product desc">
+                                                <img src="{{ asset('img/product/lg/men1.jpg') }}" class="rounded-md" alt="product desc">
                                             </a>
                                         </div>
                                     </div>
@@ -236,7 +201,7 @@
                                     <figure class="product-media">
                                         <span class="product-label label-new">جدید</span>
                                         <a href="product.html">
-                                            <img src="assets/images/products/product-4.jpg" alt="تصویر محصول" class="product-image">
+                                            <img src="{{ asset('img/product/lg/men2.jpg') }}" alt="تصویر محصول" class="product-image h-30">
                                         </a>
 
                                         <div class="product-action-vertical">
@@ -269,16 +234,16 @@
                                             <span class="ratings-text">( 2 بازدید )</span>
                                         </div>
 
-                                        <div class="product-nav product-nav-thumbs">
-                                            <a href="#" class="active">
-                                                <img src="assets/images/products/product-4-thumb.jpg" alt="product desc">
+                                        <div class="product-nav product-nav-thumbs flex gap-2 p-2 ">
+                                            <a href="#" class="active ">
+                                                <img src="{{ asset('img/product/lg/men2.jpg') }}" class="rounded-md" alt="product desc">
                                             </a>
                                             <a href="#">
-                                                <img src="assets/images/products/product-4-2-thumb.jpg" alt="product desc">
+                                                <img src="{{ asset('img/product/lg/men2.jpg') }}" class="rounded-md" alt="product desc">
                                             </a>
 
                                             <a href="#">
-                                                <img src="assets/images/products/product-4-3-thumb.jpg" alt="product desc">
+                                                <img src="{{ asset('img/product/lg/men2.jpg') }}" class="rounded-md" alt="product desc">
                                             </a>
                                         </div>
                                     </div>
@@ -310,7 +275,7 @@
                 </div>
                 <div class="lg:col-span-3 col-span-full p-5 ">
                     <div class="hidden lg:block">
-                        <aside class=" text-right bg-slate-700 rounded-lg">
+                        <aside class=" text-right bg-slate-700 rounded-lg p-3">
                             <div class="sidebar sidebar-shop">
                                 <div class="widget widget-clean">
                                     <label>فیلترها : </label>
@@ -464,26 +429,6 @@
                                                     محدوده قیمت :
                                                     <span id="filter-price-range">1000تومان - 750000تومان</span>
                                                 </div>
-
-                                                <div id="price-slider" class="noUi-target noUi-ltr noUi-horizontal">
-                                                    <div class="noUi-base">
-                                                        <div class="noUi-connects">
-                                                            <div class="noUi-connect" style="transform: translate(0%) scale(0.74975, 1);"></div>
-                                                        </div>
-                                                        <div class="noUi-origin" style="transform: translate(0%); z-index: 5;">
-                                                            <div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="1000.0" aria-valuemax="749800.0" aria-valuenow="1000.0" aria-valuetext="1000تومان">
-                                                                <div class="noUi-touch-area"></div>
-                                                                <div class="noUi-tooltip">1000تومان</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="noUi-origin" style="transform: translate(74.975%); z-index: 4;">
-                                                            <div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="1200.0" aria-valuemax="1000000.0" aria-valuenow="750000.0" aria-valuetext="750000تومان">
-                                                                <div class="noUi-touch-area"></div>
-                                                                <div class="noUi-tooltip">750000تومان</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -495,9 +440,6 @@
             </div>
         </div>
     </div>
-
-
-
 </section>
 
 @endsection
