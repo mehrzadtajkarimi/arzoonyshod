@@ -4,7 +4,7 @@
     font-family: "Vazir";
     font-style: normal;
     font-weight: normal;
-    src: url('../../public/fonts/Vazir/Vazir.woff');
+    src: url('../../fonts/Vazir/Vazir.woff');
 }
 @tailwind utilities;
 

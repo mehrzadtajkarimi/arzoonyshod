@@ -2,6 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "npm run development",
+        "back": "tailwind build public/back/css/app.css -o public/back/style.css",
         "development": "mix",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",

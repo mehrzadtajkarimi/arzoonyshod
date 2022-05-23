@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <section>
     <div class="mx-auto">
         <div class="w-full bg-slate-800 rounded-xl">
@@ -92,164 +93,60 @@
                         </div>
                     </div>
                     <div class="products mb-3">
-                        <div class="row justify-content-center">
-                            <div class="grid grid-cols-3 gap-5 px-5">
-                                <div class="product text-center bg-slate-700 rounded-lg">
-                                    <figure class="product-media max-h-fit ">
-                                        <span class="product-label label-new">جدید</span>
-                                        <a href="product.html " class="">
-                                            <img src="{{ asset('img/product/lg/men.jpg') }}" alt="تصویر محصول" class="product-image">
+                        <div class="grid grid-cols-3 gap-5 px-5">
+
+                            <div class="product text-center bg-slate-700 rounded-lg">
+                                <figure class="product-media my-5">
+                                    <a href="product.html " class="">
+                                        <img src="{{ asset('img/product/lg/men.jpg') }}" alt="تصویر محصول" class="product-image rounded-lg max-h-52  mx-auto">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist btn-expandable">
+                                            <span>افزودن به لیست علاقه مندی</span>
                                         </a>
-
-                                        <div class="product-action-vertical">
-                                            <a href="#" class="btn-product-icon btn-wishlist btn-expandable"><span>افزودن
-                                                    به لیست علاقه مندی</span></a>
-                                            <a href="popup/quickView.html" class="btn-product-icon btn-quickview" title="مشاهده سریع محصول"><span>مشاهده سریع</span></a>
-                                            <a href="#" class="btn-product-icon btn-compare" title="مقایسه"><span>مقایسه</span></a>
-                                        </div>
-
-                                        <div class="product-action">
-                                            <a href="#" class="btn-product btn-cart"><span>افزودن به
-                                                    سبد خرید</span></a>
-                                        </div>
-                                    </figure>
-
-                                    <div class="product-body">
-                                        <div class="product-cat text-center">
-                                            <a href="#">زنانه</a>
-                                        </div>
-                                        <h3 class="product-title text-center"><a href="product.html">دامن چرمی
-                                                قهوه ای</a></h3>
-                                        <div class="product-price">
-                                            64,000 تومان
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings">
-                                                <div class="ratings-val" style="width: 20%;"></div>
-
-                                            </div>
-                                            <span class="ratings-text">( 2 بازدید )</span>
-                                        </div>
-
-                                        <div class="product-nav product-nav-thumbs flex gap-2 p-2 ">
-                                            <a href="#" class="active ">
-                                                <img src="{{ asset('img/product/lg/men.jpg') }}" class="rounded-md" alt="product desc">
-                                            </a>
-                                            <a href="#">
-                                                <img src="{{ asset('img/product/lg/men.jpg') }}" class="rounded-md" alt="product desc">
-                                            </a>
-
-                                            <a href="#">
-                                                <img src="{{ asset('img/product/lg/men.jpg') }}" class="rounded-md" alt="product desc">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="product text-center bg-slate-700 rounded-lg">
-                                    <figure class="product-media">
-                                        <span class="product-label label-new">جدید</span>
-                                        <a href="product.html">
-                                            <img src="{{ asset('img/product/lg/men1.jpg') }}" alt="تصویر محصول" class="product-image h-30">
+                                        <a href="popup/quickView.html" class="btn-product-icon btn-quickview" title="مشاهده سریع محصول">
+                                            <span>مشاهده سریع</span>
                                         </a>
-
-                                        <div class="product-action-vertical">
-                                            <a href="#" class="btn-product-icon btn-wishlist btn-expandable"><span>افزودن
-                                                    به لیست علاقه مندی</span></a>
-                                            <a href="popup/quickView.html" class="btn-product-icon btn-quickview" title="مشاهده سریع محصول"><span>مشاهده سریع</span></a>
-                                            <a href="#" class="btn-product-icon btn-compare" title="مقایسه"><span>مقایسه</span></a>
-                                        </div>
-
-                                        <div class="product-action">
-                                            <a href="#" class="btn-product btn-cart"><span>افزودن به
-                                                    سبد خرید</span></a>
-                                        </div>
-                                    </figure>
-
-                                    <div class="product-body">
-                                        <div class="product-cat text-center">
-                                            <a href="#">زنانه</a>
-                                        </div>
-                                        <h3 class="product-title text-center"><a href="product.html">دامن چرمی
-                                                قهوه ای</a></h3>
-                                        <div class="product-price">
-                                            64,000 تومان
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings">
-                                                <div class="ratings-val" style="width: 20%;"></div>
-
-                                            </div>
-                                            <span class="ratings-text">( 2 بازدید )</span>
-                                        </div>
-                                        <div class="product-nav product-nav-thumbs flex gap-2 p-2 ">
-                                            <a href="#" class="active ">
-                                                <img src="{{ asset('img/product/lg/men1.jpg') }}" class="rounded-md" alt="product desc">
-                                            </a>
-                                            <a href="#">
-                                                <img src="{{ asset('img/product/lg/men1.jpg') }}" class="rounded-md" alt="product desc">
-                                            </a>
-
-                                            <a href="#">
-                                                <img src="{{ asset('img/product/lg/men1.jpg') }}" class="rounded-md" alt="product desc">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="product text-center bg-slate-700 rounded-lg">
-                                    <figure class="product-media">
-                                        <span class="product-label label-new">جدید</span>
-                                        <a href="product.html">
-                                            <img src="{{ asset('img/product/lg/men2.jpg') }}" alt="تصویر محصول" class="product-image h-30">
+                                        <a href="#" class="btn-product-icon btn-compare" title="مقایسه">
+                                            <span>مقایسه</span>
                                         </a>
-
-                                        <div class="product-action-vertical">
-                                            <a href="#" class="btn-product-icon btn-wishlist btn-expandable"><span>افزودن
-                                                    به لیست علاقه مندی</span></a>
-                                            <a href="popup/quickView.html" class="btn-product-icon btn-quickview" title="مشاهده سریع محصول"><span>مشاهده سریع</span></a>
-                                            <a href="#" class="btn-product-icon btn-compare" title="مقایسه"><span>مقایسه</span></a>
-                                        </div>
-
-                                        <div class="product-action">
-                                            <a href="#" class="btn-product btn-cart"><span>افزودن به
-                                                    سبد خرید</span></a>
-                                        </div>
-                                    </figure>
-
-                                    <div class="product-body">
-                                        <div class="product-cat text-center">
-                                            <a href="#">زنانه</a>
-                                        </div>
-                                        <h3 class="product-title text-center"><a href="product.html">دامن چرمی
-                                                قهوه ای</a></h3>
-                                        <div class="product-price">
-                                            64,000 تومان
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings">
-                                                <div class="ratings-val" style="width: 20%;"></div>
-
-                                            </div>
-                                            <span class="ratings-text">( 2 بازدید )</span>
-                                        </div>
-
-                                        <div class="product-nav product-nav-thumbs flex gap-2 p-2 ">
-                                            <a href="#" class="active ">
-                                                <img src="{{ asset('img/product/lg/men2.jpg') }}" class="rounded-md" alt="product desc">
-                                            </a>
-                                            <a href="#">
-                                                <img src="{{ asset('img/product/lg/men2.jpg') }}" class="rounded-md" alt="product desc">
-                                            </a>
-
-                                            <a href="#">
-                                                <img src="{{ asset('img/product/lg/men2.jpg') }}" class="rounded-md" alt="product desc">
-                                            </a>
-                                        </div>
                                     </div>
-
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-cart">
+                                            <span>افزودن به سبد خرید</span>
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-body">
+                                    <div class="product-cat text-center">
+                                        <a href="#">زنانه</a>
+                                    </div>
+                                    <h3 class="product-title text-center">
+                                        <a href="product.html">دامن چرمی قهوه ای</a>
+                                    </h3>
+                                    <div class="product-price">
+                                        64,000 تومان
+                                    </div>
+                                    <div class="ratings-container">
+                                        <div class="ratings">
+                                            <div class="ratings-val" style="width: 20%;"></div>
+                                        </div>
+                                        <span class="ratings-text">( 2 بازدید )</span>
+                                    </div>
+                                    <div class="product-nav product-nav-thumbs flex justify-center gap-2 p-2 mx-auto ">
+                                        <a href="#" class="active ">
+                                            <img src="{{ asset('img/product/lg/men.jpg') }}" class="rounded-md max-h-16 " alt="product desc">
+                                        </a>
+                                        <a href="#">
+                                            <img src="{{ asset('img/product/lg/men.jpg') }}" class="rounded-md max-h-16 " alt="product desc">
+                                        </a>
+                                        <a href="#">
+                                            <img src="{{ asset('img/product/lg/men.jpg') }}" class="rounded-md max-h-16 " alt="product desc">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+                
 
                         </div>
                     </div>
