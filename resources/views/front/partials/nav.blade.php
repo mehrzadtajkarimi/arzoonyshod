@@ -2,7 +2,37 @@
     <div class="rounded-2xl  w-full h-24 mt-4  dark:bg-slate-800  bg-slate-50 ">
         <section class="hidden lg:block">
             <div class="flex justify-between items-center mx-10">
-                <div class="flex flex-row content-center items-center  space-x-4 ">
+                <div class="w-20">
+                    <img class="mt-2" src="{{ asset('img/logo/logo2.png') }}" alt="arzoonyshod" srcset="">
+                </div>
+                <div class="w-4/12">
+                    <div class="flex items-center justify-start rounded-lg h-10 dark:bg-slate-700 bg-slate-200">
+                        <div class="mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <div class="mr-2">
+                            <p class="dark:text-red-400 opacity-80 text-slate-600">دنبال چه میگردی ؟</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row content-center items-center  gap-3">
+                    <div class="rounded-full h-10 w-10  dark:bg-slate-600 bg-slate-200 grid place-items-center">
+                        @if (session('theme') == '' || session('theme') == 'dark')
+                        <a href="{{ url('chang_themes/'.'light') }}" class="" id="btn-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </a>
+                        @elseif ( session('theme') == 'light')
+                        <a href="{{ url('chang_themes/'.'dark') }}" class="" id="btn-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </a>
+                        @endif
+                    </div>
                     <div class="rounded-full h-10 w-10 dark:bg-slate-600 bg-slate-200 grid place-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -18,36 +48,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                         </svg>
                     </div>
-                    <div class="rounded-full h-10 w-10 space-x-0 dark:bg-slate-600 bg-slate-200 grid place-items-center">
-                        @if (session('theme') == '' || session('theme') == 'dark')
-                        <a href="{{ url('chang_themes/'.'light') }}" class="" id="btn-dark">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                            </svg>
-                        </a>
-                        @elseif ( session('theme') == 'light')
-                        <a href="{{ url('chang_themes/'.'dark') }}" class="" id="btn-light">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                            </svg>
-                        </a>
-                        @endif
-                    </div>
-                </div>
-                <div class="w-4/12">
-                    <div class="flex items-center justify-end rounded-lg h-10 dark:bg-slate-700 bg-slate-200">
-                        <div class="mr-2">
-                            <p class="dark:text-red-400 opacity-80 text-slate-600">دنبال چه میگردی ؟</p>
-                        </div>
-                        <div class="mr-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-20">
-                    <img class="mt-2" src="{{ asset('img/logo/logo2.png') }}" alt="arzoonyshod" srcset="">
                 </div>
             </div>
             <div class="flex justify-center mt-6">
@@ -138,10 +138,10 @@
                 </div>
             </div>
             <div class=" ">
-                <div class="absolute inset-0 " x-show="nav_open" >
+                <div class="absolute inset-0 " x-show="nav_open">
                     <div class="h-screen absolute w-screen bg-black  opacity-50 z-10 " @click="nav_open = false ">
                     </div>
-                    <div class="h-screen absolute right-0 w-2/5 z-20 bg-white dark:bg-slate-700" >
+                    <div class="h-screen absolute right-0 w-2/5 z-20 bg-white dark:bg-slate-700">
                         <div class="container mx-auto px-4">
                             <div class="flex flex-row items-center">
                                 <div class="basis-2/4">

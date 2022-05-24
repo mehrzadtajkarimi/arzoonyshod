@@ -6,6 +6,12 @@
     font-weight: normal;
     src: url('../../fonts/Vazir/Vazir.woff');
 }
+@font-face {
+    font-family: "BYekan";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/BYekan/BYekan.woff');
+}
 @tailwind utilities;
 
 

@@ -10,8 +10,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      body: ['Vazir'],
-      display: ['Vazir'],
+      Vazir: ['Vazir'],
+      BYekan: ['BYekan'],
     },
     container: {
       center: true,

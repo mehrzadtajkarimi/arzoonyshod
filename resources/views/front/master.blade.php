@@ -6,7 +6,7 @@
     <title>@yield('title')</title>
 </head>
 
-<body class="container bg-width  dark:bg-slate-900 dark:text-red-500  text-slate-600 ">
+<body  dir="rtl"  class="container font-Vazir bg-width  dark:bg-slate-900 dark:text-red-500  text-slate-600 ">
     <header>
         <nav class="w-full">
             @include('front.partials.nav')

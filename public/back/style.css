@@ -516,6 +516,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   src: url('../../fonts/Vazir/Vazir.woff');
 }
 
+@font-face {
+  font-family: "BYekan";
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('../../fonts/BYekan/BYekan.woff');
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1390,8 +1400,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
-.font-body {
+.font-Vazir {
   font-family: Vazir;
+}
+
+.font-BYekan {
+  font-family: BYekan;
 }
 
 .text-sm {

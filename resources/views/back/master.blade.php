@@ -5,7 +5,7 @@
     @include('back.partials.head')
 </head>
 
-<body dir="rtl" class="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative font-body">
+<body dir="rtl" class="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative font-Vazir">
     <div class="flex items-start justify-between">
         <!-- Nav Bar -->
         <div class="h-screen hidden lg:block my-4 mr-4 shadow-lg relative w-80">
