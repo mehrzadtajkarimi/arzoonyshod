@@ -92,17 +92,23 @@
         </section>
         <section class="block lg:hidden" x-data="{nav_open : false}">
             <div class="flex justify-between items-center mt-5 md:m-0">
+                <div class="mr-10  cursor-pointer">
+                    <button type="button" class="" @click="nav_open = true ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="">
+                    <div class="w-44 hidden md:block">
+                        <img class="" src="{{ asset('img/logo/logo1.png') }}" alt="arzoonyshod" srcset="">
+                    </div>
+                    <div class="w-10  md:hidden ">
+                        <img class="" src="{{ asset('img/logo/logo3.png') }}" alt="arzoonyshod" srcset="">
+                    </div>
+                </div>
                 <div class="ml-10">
                     <div class="">
-                        <div class="md:hidden">
-                            <button class=" p-2 dark:bg-slate-700 bg-slate-200 rounded-lg ">
-                                <div class="px-1    dark:bg-slate-600 bg-slate-300 rounded-lg relative left-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 8l4 4m0 0l-4 4m4-4H3" />
-                                    </svg>
-                                </div>
-                            </button>
-                        </div>
                         <div class="hidden md:block ">
                             <div class="relative">
                                 <button class="flex py-2 pl-2 pr-6 dark:bg-slate-700 bg-slate-200 rounded-lg  ">
@@ -119,22 +125,16 @@
                                 </button>
                             </div>
                         </div>
+                        <div class="md:hidden">
+                            <button class=" p-2 dark:bg-slate-700 bg-slate-200 rounded-lg ">
+                                <div class="px-1    dark:bg-slate-600 bg-slate-300 rounded-lg relative left-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="">
-                    <div class="w-44 hidden md:block">
-                        <img class="" src="{{ asset('img/logo/logo1.png') }}" alt="arzoonyshod" srcset="">
-                    </div>
-                    <div class="w-10  md:hidden ">
-                        <img class="" src="{{ asset('img/logo/logo3.png') }}" alt="arzoonyshod" srcset="">
-                    </div>
-                </div>
-                <div class="mr-10  cursor-pointer">
-                    <button type="button" class="" @click="nav_open = true ">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
                 </div>
             </div>
             <div class=" ">
@@ -143,16 +143,16 @@
                     </div>
                     <div class="h-screen absolute right-0 w-2/5 z-20 bg-white dark:bg-slate-700">
                         <div class="container mx-auto px-4">
-                            <div class="flex flex-row items-center">
-                                <div class="basis-2/4">
+                            <div class="flex flex-row items-center justify-between">
+                                <div class="basis-3/4">
+                                    <img class=" w-20 " src="{{ asset('img/logo/logo8.png') }}" alt="" srcset="">
+                                </div>
+                                <div class="basis-1/4">
                                     <button id="btn-nav-close" class="p-2" @click="nav_open = false ">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-400 dark:text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
                                     </button>
-                                </div>
-                                <div class="basis-3/4">
-                                    <img class=" w-20 " src="{{ asset('img/logo/logo8.png') }}" alt="" srcset="">
                                 </div>
                             </div>
                             <hr class=" border-slate-400 dark:border-red-500 opacity-20">

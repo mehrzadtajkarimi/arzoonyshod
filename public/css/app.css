@@ -799,6 +799,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .basis-3\/4 {
   flex-basis: 75%;
 }
+.basis-1\/4 {
+  flex-basis: 25%;
+}
 .cursor-pointer {
   cursor: pointer;
 }
