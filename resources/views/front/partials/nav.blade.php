@@ -88,7 +88,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>  
         </section>
         <section class="block lg:hidden" x-data="{nav_open : false}">
             <div class="flex justify-between items-center mt-5 md:m-0">
